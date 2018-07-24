@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		0449C8582105CB2A004DD26B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C8572105CB2A004DD26B /* AppDelegate.swift */; };
-		0449C85A2105CB2A004DD26B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C8592105CB2A004DD26B /* ViewController.swift */; };
 		0449C85D2105CB2A004DD26B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0449C85B2105CB2A004DD26B /* Main.storyboard */; };
 		0449C85F2105CB38004DD26B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0449C85E2105CB38004DD26B /* Assets.xcassets */; };
 		0449C8622105CB38004DD26B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0449C8602105CB38004DD26B /* LaunchScreen.storyboard */; };
+		0449C86A2105D68B004DD26B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0449C8692105D68B004DD26B /* Alamofire.framework */; };
+		0449C86C21060F26004DD26B /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C86B21060F26004DD26B /* GamesViewController.swift */; };
+		0449C86E21060F91004DD26B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C86D21060F91004DD26B /* Constants.swift */; };
+		0449C870210613F0004DD26B /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C86F210613F0004DD26B /* GameCell.swift */; };
+		045733D02107426C0036BFBF /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045733CF2107426C0036BFBF /* Games.swift */; };
+		045733D3210746700036BFBF /* GameDataServises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045733D2210746700036BFBF /* GameDataServises.swift */; };
+		422CA97C3473D1D8EE217300 /* Pods_EfTwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C04C2BD49B357EED599421 /* Pods_EfTwitch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0449C8542105CB2A004DD26B /* EfTwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EfTwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0449C8572105CB2A004DD26B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0449C8592105CB2A004DD26B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0449C85C2105CB2A004DD26B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0449C85E2105CB38004DD26B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0449C8612105CB38004DD26B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0449C8632105CB38004DD26B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0449C8692105D68B004DD26B /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0449C86B21060F26004DD26B /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
+		0449C86D21060F91004DD26B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0449C86F210613F0004DD26B /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		045733CF2107426C0036BFBF /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
+		045733D2210746700036BFBF /* GameDataServises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDataServises.swift; sourceTree = "<group>"; };
+		43C04C2BD49B357EED599421 /* Pods_EfTwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EfTwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D139A2C7FE263BCA11853EA /* Pods-EfTwitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EfTwitch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EfTwitch/Pods-EfTwitch.debug.xcconfig"; sourceTree = "<group>"; };
+		DAD55FF2AA267CA60F694CEA /* Pods-EfTwitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EfTwitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-EfTwitch/Pods-EfTwitch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0449C86A2105D68B004DD26B /* Alamofire.framework in Frameworks */,
+				422CA97C3473D1D8EE217300 /* Pods_EfTwitch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +56,8 @@
 			children = (
 				0449C8562105CB2A004DD26B /* EfTwitch */,
 				0449C8552105CB2A004DD26B /* Products */,
+				6235814079EAF9FAA1ED5072 /* Pods */,
+				219CE5A47E922CCA644433DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +72,76 @@
 		0449C8562105CB2A004DD26B /* EfTwitch */ = {
 			isa = PBXGroup;
 			children = (
+				0449C8632105CB38004DD26B /* Info.plist */,
+				045733D1210746370036BFBF /* Servises */,
+				045733CE210742510036BFBF /* Model */,
 				0449C8572105CB2A004DD26B /* AppDelegate.swift */,
-				0449C8592105CB2A004DD26B /* ViewController.swift */,
+				045733CC210741E30036BFBF /* View */,
+				045733CB210741AF0036BFBF /* Controllers */,
+				045733CD2107420F0036BFBF /* Utilities */,
+			);
+			path = EfTwitch;
+			sourceTree = "<group>";
+		};
+		045733CB210741AF0036BFBF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0449C86B21060F26004DD26B /* GamesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		045733CC210741E30036BFBF /* View */ = {
+			isa = PBXGroup;
+			children = (
 				0449C85B2105CB2A004DD26B /* Main.storyboard */,
 				0449C85E2105CB38004DD26B /* Assets.xcassets */,
 				0449C8602105CB38004DD26B /* LaunchScreen.storyboard */,
-				0449C8632105CB38004DD26B /* Info.plist */,
+				0449C86F210613F0004DD26B /* GameCell.swift */,
 			);
-			path = EfTwitch;
+			path = View;
+			sourceTree = "<group>";
+		};
+		045733CD2107420F0036BFBF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0449C86D21060F91004DD26B /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		045733CE210742510036BFBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				045733CF2107426C0036BFBF /* Games.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		045733D1210746370036BFBF /* Servises */ = {
+			isa = PBXGroup;
+			children = (
+				045733D2210746700036BFBF /* GameDataServises.swift */,
+			);
+			path = Servises;
+			sourceTree = "<group>";
+		};
+		219CE5A47E922CCA644433DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0449C8692105D68B004DD26B /* Alamofire.framework */,
+				43C04C2BD49B357EED599421 /* Pods_EfTwitch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6235814079EAF9FAA1ED5072 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D139A2C7FE263BCA11853EA /* Pods-EfTwitch.debug.xcconfig */,
+				DAD55FF2AA267CA60F694CEA /* Pods-EfTwitch.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0449C8662105CB38004DD26B /* Build configuration list for PBXNativeTarget "EfTwitch" */;
 			buildPhases = (
+				B41AAE5E9EB3963291A749E7 /* [CP] Check Pods Manifest.lock */,
 				0449C8502105CB2A004DD26B /* Sources */,
 				0449C8512105CB2A004DD26B /* Frameworks */,
 				0449C8522105CB2A004DD26B /* Resources */,
+				5ECF5C1DEFEDFE24BB8C70E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +212,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5ECF5C1DEFEDFE24BB8C70E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EfTwitch/Pods-EfTwitch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EfTwitch/Pods-EfTwitch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B41AAE5E9EB3963291A749E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EfTwitch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0449C8502105CB2A004DD26B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0449C85A2105CB2A004DD26B /* ViewController.swift in Sources */,
+				0449C86C21060F26004DD26B /* GamesViewController.swift in Sources */,
 				0449C8582105CB2A004DD26B /* AppDelegate.swift in Sources */,
+				0449C86E21060F91004DD26B /* Constants.swift in Sources */,
+				045733D02107426C0036BFBF /* Games.swift in Sources */,
+				0449C870210613F0004DD26B /* GameCell.swift in Sources */,
+				045733D3210746700036BFBF /* GameDataServises.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +403,7 @@
 		};
 		0449C8672105CB38004DD26B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D139A2C7FE263BCA11853EA /* Pods-EfTwitch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +421,7 @@
 		};
 		0449C8682105CB38004DD26B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD55FF2AA267CA60F694CEA /* Pods-EfTwitch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
