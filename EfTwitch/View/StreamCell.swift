@@ -10,15 +10,23 @@ import UIKit
 
 class StreamCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBOutlet weak var streamImageView: UIImageView!
+    @IBOutlet weak var broadcasterName: UILabel!
+    @IBOutlet weak var streamTitle: UILabel!
+    @IBOutlet weak var streamViewers: UILabel!
+    
+    func configureCell(_ stream: Stream) {
+        broadcasterName.text = stream.broadcasterName
+        streamTitle.text = stream.streamTitle
+        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        
+        streamViewers.text = "\(formatter.string(from: NSNumber(value: stream.streamViewerCount))!) viewers"
+        
+        if stream.streamImage != nil {
+            streamImageView.image = stream.streamImage
+        }
     }
 
 }

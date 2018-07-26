@@ -43,7 +43,7 @@ class StreamDataService {
                                 titleString = title
                             }
                         }
-                        let stream = Stream()
+                        let stream = Stream(name: nameString, title: titleString, viewerCount: viewerCountDouble, imageUrl: imageUrlString)
                         self.streams.append(stream)
                     }
                 }
@@ -51,4 +51,10 @@ class StreamDataService {
             completed()
         }
     }
+    
+    func removeAllStreams() {
+        streams.removeAll()
+    }
+   
+    
 }

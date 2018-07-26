@@ -29,9 +29,27 @@ class StreamsViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        StreamDataService.instance.downloadStreamsForGame(game) {
+            for stream in StreamDataService.instance.streams {
+                stream.downloadStreamImage {
+                    self.streamsTableView.reloadData()
+                }
+            }
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        StreamDataService.instance.removeAllStreams()
+    }
+    
     //MARK: UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return StreamDataService.instance.streams.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,6 +58,10 @@ class StreamsViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = streamsTableView.dequeueReusableCell(withIdentifier: "StreamCell", for: indexPath) as? StreamCell {
+            
+            let stream = StreamDataService.instance.streams[indexPath.row]
+            cell.configureCell(stream)
+            
             return cell
         } else {
             return StreamCell()

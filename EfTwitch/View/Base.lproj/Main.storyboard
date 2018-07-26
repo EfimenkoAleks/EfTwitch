@@ -139,6 +139,12 @@
                                                 <constraint firstItem="Gr1-zE-5Ik" firstAttribute="leading" secondItem="MRu-PC-AhN" secondAttribute="leadingMargin" constant="8" id="qCx-8k-i8y"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="broadcasterName" destination="nNZ-xL-Vg1" id="7Bb-S0-uQK"/>
+                                            <outlet property="streamImageView" destination="1XZ-AL-R3V" id="KNj-r4-aDH"/>
+                                            <outlet property="streamTitle" destination="Hiv-gf-0Bf" id="sJT-3T-q6P"/>
+                                            <outlet property="streamViewers" destination="eaT-xA-1rd" id="jWb-0y-KxI"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
