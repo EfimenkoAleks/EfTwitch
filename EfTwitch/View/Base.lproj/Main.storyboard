@@ -160,11 +160,27 @@
                     </view>
                     <connections>
                         <outlet property="streamsTableView" destination="WiM-NI-Y9s" id="UjE-bW-KV6"/>
+                        <segue destination="H4c-sy-wUZ" kind="show" identifier="channelShowVC" id="JAx-AV-bFB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iff-pe-m76" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1333.5999999999999" y="-573.46326836581716"/>
+        </scene>
+        <!--Channel View Controller-->
+        <scene sceneID="iLF-kK-jlq">
+            <objects>
+                <viewController id="H4c-sy-wUZ" customClass="ChannelViewController" customModule="EfTwitch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v7I-Kn-6GB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pEa-CS-ydU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9e2-8o-9ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2191" y="-573"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="p9n-RQ-SIj">

@@ -11,6 +11,7 @@
 		0439FD03210875BE006C819A /* StreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439FD02210875BE006C819A /* StreamCell.swift */; };
 		0439FD052108B6BB006C819A /* StreamDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439FD042108B6BB006C819A /* StreamDataService.swift */; };
 		0439FD072108C0E2006C819A /* Streams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439FD062108C0E2006C819A /* Streams.swift */; };
+		043B8D62210B0182000654B6 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B8D61210B0182000654B6 /* ChannelViewController.swift */; };
 		0449C8582105CB2A004DD26B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C8572105CB2A004DD26B /* AppDelegate.swift */; };
 		0449C85D2105CB2A004DD26B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0449C85B2105CB2A004DD26B /* Main.storyboard */; };
 		0449C85F2105CB38004DD26B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0449C85E2105CB38004DD26B /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		0439FD02210875BE006C819A /* StreamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamCell.swift; sourceTree = "<group>"; };
 		0439FD042108B6BB006C819A /* StreamDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamDataService.swift; sourceTree = "<group>"; };
 		0439FD062108C0E2006C819A /* Streams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streams.swift; sourceTree = "<group>"; };
+		043B8D61210B0182000654B6 /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
 		0449C8542105CB2A004DD26B /* EfTwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EfTwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0449C8572105CB2A004DD26B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0449C85C2105CB2A004DD26B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				0449C86B21060F26004DD26B /* GamesViewController.swift */,
 				0439FCFE21087223006C819A /* StreamsViewController.swift */,
+				043B8D61210B0182000654B6 /* ChannelViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				045733D02107426C0036BFBF /* Games.swift in Sources */,
 				0449C870210613F0004DD26B /* GameCell.swift in Sources */,
 				045733D3210746700036BFBF /* GameDataServises.swift in Sources */,
+				043B8D62210B0182000654B6 /* ChannelViewController.swift in Sources */,
 				0439FD052108B6BB006C819A /* StreamDataService.swift in Sources */,
 				0439FD03210875BE006C819A /* StreamCell.swift in Sources */,
 				0439FD072108C0E2006C819A /* Streams.swift in Sources */,

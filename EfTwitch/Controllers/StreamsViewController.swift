@@ -74,7 +74,51 @@ class StreamsViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //TOODOO
+        let stream = StreamDataService.instance.streams[indexPath.row]
+        
+        openStream(stream)
+    }
+    
+    //Handler function to open stream in chosen app
+    func openStream(_ stream: Stream) {
+        let alert = UIAlertController(title: "Open stream in EfTwitch or in official Twitch app?", message: "Official Twitch app must be installed for latter option", preferredStyle: .alert)
+        
+        let openInVirerTwitchAction = UIAlertAction(title: "EfTwitch", style: .default) { (action) in
+            self.performSegue(withIdentifier: "channelShowVC", sender: stream)
+        }
+        let openInTwitchAppAction = UIAlertAction(title: "Twitch", style: .default) { (action) in
+            self.openStreamInTwitchApp(stream)
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alert.addAction(openInVirerTwitchAction)
+        alert.addAction(openInTwitchAppAction)
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true, completion: nil)
+    }
+   
+    //MARK: Segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "channelShowVC" {
+            if let channelVC = segue.destination as? ChannelViewController {
+                if let stream = sender as? Stream {
+                    channelVC.stream = stream
+                }
+            }
+        }
+    }
+    
+    //MARK: Mobile Deep Link
+    func openStreamInTwitchApp(_ stream: Stream) {
+        let streamString = TWITCH_URL_STREAM_DEEP_LINK + stream.broadcasterName
+        
+        if let streamUrl = URL(string: streamString) {
+            if UIApplication.shared.canOpenURL(streamUrl) {
+                UIApplication.shared.open(streamUrl, options: [:], completionHandler: nil)
+            }
+        }
+        
     }
 
 }
